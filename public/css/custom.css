@@ -17,7 +17,14 @@ main {
     border-radius: 2%;
     border: none !important;
 }
-
+.material-icons {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 900;
+}
+.home .row {
+    width: 100%;
+}
 .btn.registration {
     width: 100%;
 }
