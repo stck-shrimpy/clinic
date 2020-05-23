@@ -14,12 +14,16 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <script src="{{ asset('js/app.js') }}" defer></script>
+   
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
-
+    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="https://kit.fontawesome.com/b5a2f3a8fa.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
     <div id="app">

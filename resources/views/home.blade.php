@@ -7,7 +7,7 @@
             <div class="col-md-12 pd-0">
                 <div class="card shadow-lg">
                     <div class="card-body">
-                        <h5 class="card-title pl-3 font-weight-bolder">今週の予約状況</h5>
+                        <h5 class="card-title pl-3 font-weight-bolder mb-4">今週の予約状況</h5>
                         <table class="table">
                             <thead>
                               <tr>
@@ -23,18 +23,17 @@
 
                               </tr>
                             </thead>
-                            <tbody>
+                            <tbody >
                               <tr>
                                 <td>9:00 ~ 19:00</td>
                               
-                                <td>Otto</td>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>Otto</td>
+                                <td><i class="far fa-circle"></i></td>
+                                <td><i class="far fa-circle"></i></td>
+                                <td><i class="far fa-circle"></i></td>
+                                <td><i class="fas fa-times"></i></td>
+                                <td><i class="fas fa-times"></i></td>
+                                <td><span class="material-icons">change_history</span></td>
 
-
-                                
-                                <td>@mdo</td>
                               </tr>
                              
                             </tbody>
@@ -47,7 +46,7 @@
             <div class="col-md-6">
                 <div class="card shadow-lg">
                     <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
+                        <h5 class="card-title font-weight-bolder">体験談</h5>
                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                         <a href="#" class="btn btn-primary">Go somewhere</a>
                       </div>
@@ -57,7 +56,7 @@
             <div class="col-md-6">
                 <div class="card shadow-lg">
                     <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
+                        <h5 class="card-title font-weight-bolder">お知らせ</h5>
                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                         <a href="#" class="btn btn-primary">Go somewhere</a>
                       </div>
