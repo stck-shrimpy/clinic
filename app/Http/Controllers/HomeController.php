@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Review;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
@@ -19,6 +21,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $latestReviews = Review::with('user')->orderByDesc('created_at')->take(4)->get();
+    
+        return view('home',
+            [
+                'reviews' => $latestReviews
+            ]
+        );
     }
 }
