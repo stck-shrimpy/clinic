@@ -1,16 +1,24 @@
-body {
-    height: 100vh;
-    background-color: rgba(218, 95, 95, 0.781);
+body, #app {
+    min-height: 100vh;
 }
 
-#app {
-    height: 95%;
-}
 nav {
-    height: 7%;
+    min-height: 7vh;
 }
 main {
-    height: 93%;
+    min-height: 87vh;
+    background-image: url(../images/main-background.jpg);
+    background-size: cover;
+}
+
+
+footer {
+    height: 6vh;
+    background-color: rgb(172, 210, 212);
+}
+
+.card {
+    border: none;
 }
 .card.registration {
     flex-direction: row !important;
@@ -40,6 +48,10 @@ main {
     padding: 0;
 }
 
-footer {
-    height: 5%;
+.reservation .card-header {
+    background-color: rgb(172, 210, 212);
+}
+.material-icons.loyalty {
+    font-size: 1.5rem;
+    color: rgb(248, 110, 110);
 }
