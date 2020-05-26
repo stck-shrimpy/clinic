@@ -21,8 +21,24 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <link href="{{ asset('css/default.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/default.date.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/default.time.css') }}" rel="stylesheet">
+
+
+    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/picker.js') }}"></script>
+    <script src="{{ asset('js/picker.date.js') }}"></script>
+    <script src="{{ asset('js/picker.time.js') }}"></script>
+    <script src="{{ asset('js/custom.js') }}"></script>
+
+
+
     <script src="https://kit.fontawesome.com/b5a2f3a8fa.js" crossorigin="anonymous"></script>
+
+    <script>
+       
+    </script> 
     
 </head>
 <body>
@@ -43,7 +59,7 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">診療予約</a>
+                                <a class="nav-link" href="{{ route('reservations.create') }}">診療予約</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">ログイン</a>
@@ -87,15 +103,15 @@
         <main class="">
             @yield('content')
         </main>
+        <footer class="page-footer d-flex align-items-center justify-content-center">
+    
+            <!-- Copyright -->
+            <div class="footer-copyright text-center ">© 2020 Copyright: Shrimpy</div>
         
+        </footer>
 
     </div>
 
-    <footer class="page-footer mt-auto">
-    
-        <!-- Copyright -->
-        <div class="footer-copyright text-center">© 2020 Copyright: Shrimpy</div>
-    
-    </footer>
+   
 </body>
 </html>

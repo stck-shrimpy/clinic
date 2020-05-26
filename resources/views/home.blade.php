@@ -1,13 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container home pt-5">
+<div class="container home pt-5 pb-5">
 
-	<div class="row justify-content-center mt-5 mb-5">
-		<div class="col-md-12 pd-0">
+	<div class="row justify-content-center">
+		<div class="col-md-12">
 			<div class="card shadow-lg">
 				<div class="card-body">
-					<h5 class="card-title pl-3 font-weight-bolder mb-4">今週の予約状況</h5>
+					<h5 class="card-title pl-2 font-weight-bolder mb-4">今週の予約状況</h5>
 					<table class="table">
 						<thead>
 							<tr>
@@ -50,7 +50,8 @@
 							<h5 class="card-title font-weight-bolder">体験談</h5>
 								<ul>
 									@foreach ($reviews as $review)
-										<li class="mt-4 text-dark"><p class="card-text">{{ $review->body }}&nbsp;&nbsp;<small >{{ $review->user->name }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ $review->created_at }}</small></p></li>
+										<li class="mt-4 text-dark"><p class="card-text mb-1">{{ $review->body }}</p>
+										<small  >{{ $review->user->name }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ $review->created_at }}</small></li>
 									@endforeach
 								</ul>
 								
@@ -77,7 +78,7 @@
 			@endguest
 						
 			
-			<div class="col-md-6">
+			<div class="col-md-6 mt-xs-5">
 				<div class="card shadow-lg">
 					<div class="card-body">
 						<h5 class="card-title font-weight-bolder">今日の空席状況</h5>
