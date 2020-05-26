@@ -13,6 +13,7 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
+        factory(User::class)->states('admin')->create();
         factory(User::class, 50)->create()->each(function ($user) {
             
             $user->review()->save(factory(Review::class)->make());
