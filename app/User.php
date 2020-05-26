@@ -36,10 +36,16 @@ class User extends Authenticatable
      */
     protected $casts = [
         'email_verified_at' => 'datetime',
+        'is_admin' => 'boolean'
     ];
 
     public function review()
     {
         return $this->hasMany('App\Review');
+    }
+
+    public function reservation()
+    {
+        return $this->hasMany('App\Reservation');
     }
 }

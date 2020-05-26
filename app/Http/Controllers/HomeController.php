@@ -22,7 +22,7 @@ class HomeController extends Controller
     public function index()
     {
         $latestReviews = Review::with('user')->orderByDesc('created_at')->take(4)->get();
-    
+        
         return view('home',
             [
                 'reviews' => $latestReviews
